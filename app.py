@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 
+
 app = Flask(__name__)
 
 # Sample product data
@@ -33,4 +34,4 @@ def view_cart():
     return render_template('cart.html', cart=cart, total=total)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
