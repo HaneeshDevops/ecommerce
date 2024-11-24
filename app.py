@@ -33,5 +33,6 @@ def view_cart():
     total = sum(item['price'] for item in cart)
     return render_template('cart.html', cart=cart, total=total)
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080, debug=True)
